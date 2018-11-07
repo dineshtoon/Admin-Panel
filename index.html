@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Welcome Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\bootstrap.min.css">
+<style>
+.operation {background-color:white;color:#4caf50;border:solid;padding: 60px 120px;text-decoration: none;margin: 4px 2px;cursor: pointer;font-size:30px;transition-duration: 0.9s}
+.admin {background-color:white;border:solid;color:orange;padding: 60px 120px;text-decoration: none;margin: 4px 2px;cursor: pointer;font-size:30px;transition-duration: 0.9s}
+.operation:hover {background-color:#4caf50;border:solid;color: white;padding: 60px 120px;text-decoration: none;margin: 4px 2px;cursor: pointer;font-size:30px;border-radius:15px 50px;box-shadow: 0 12px 16px 0 black,0 17px 50px 0 black}
+.admin:hover {background-color:orange;border:solid;border-color:5px;color: white;padding: 60px 120px;text-decoration: none;margin: 4px 2px;cursor: pointer;font-size:30px;border-radius:15px 50px;box-shadow: 0 12px 16px 0 black,0 17px 50px 0 black}
+
+body {background: linear-gradient(to right, orange , #4caf50);}
+</style>
+
+
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<center><h1>Welcome User</h1></center>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<center><h3>Please Selet An Option</h3></center>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<center><form method="post" action="admin_login.php" role="form" >
+  <div>
+  <input type="submit" value="ADMIN LOGIN" class="operation" >
+  </div>
+</form>
+</center>
+</div>
+<div class="col-md-6">
+<center><form method="post" action="user_login.php" role="form" >
+  <div>
+  <input type="submit" value="USER LOGIN" class="admin" >
+  </div>
+</form>
+</center>
+</div>
+</div>
+</div>
+</body>
+</html>
